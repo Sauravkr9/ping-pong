@@ -124,7 +124,11 @@ function collisionwithuser(b,p){ //b-ball , p -player
     return p.right > b.left && p.left < b.right && b.bottom > p.top;
 }
 
-
+// sound
+function playSound() {
+    var audio = new Audio('failure1.mp3'); // replace with the path to your sound file
+    audio.play();
+  }
 // Game over function
 function ShowGameOver(){
     // Hide canvas
@@ -170,6 +174,7 @@ function update(){
     }
     if(ball.bottom>canvas.height)
     {
+        playSound();
         clearInterval(loop);
         ShowGameOver();
     }
