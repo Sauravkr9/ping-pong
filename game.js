@@ -10,9 +10,9 @@ function drawRect(x,y,w,h,color){
 
 // computer paddle
 const com = {
-    x: canvas.width/2 - 70/2,
+    x: canvas.width/2 - 100/2,
     y: 0,
-    width: 70,
+    width: 100,
     height: 10,
     color: "white",
 }
@@ -20,9 +20,9 @@ const com = {
 
 // User Paddle
 const user = {
-    x: canvas.width/2 - 70/2,
+    x: canvas.width/2 - 100/2,
     y: canvas.height - 10,
-    width: 70,
+    width: 100,
     height: 10,
     color: "white",
     score:0
@@ -72,7 +72,7 @@ function drawText(text,x,y,color){
 function render(){
 
     // Make canvas
-    drawRect(0,0,400,600,"black");
+    drawRect(0,0,600,800,"black");
 
     // computer paddle
     drawRect(com.x,com.y,com.width,com.height,com.color)
