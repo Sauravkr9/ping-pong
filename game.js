@@ -195,4 +195,4 @@ function start(){
 }
 
 // loop
-const loop = setInterval(start, 1000/50);
+const loop = setInterval(start, 1000/70);
